@@ -35,10 +35,7 @@
         "laravel": {
             "providers": [
                 "Igorkalm\\IDPcontroller\\IDPcontrollerServiceProvider"
-            ],
-            "aliases": {
-                "IDPcontroller": "Igorkalm\\IDPcontroller\\IDPcontrollerFacade"
-            }
+            ]
         }
     }
 }

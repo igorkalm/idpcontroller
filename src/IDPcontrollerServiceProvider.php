@@ -57,8 +57,8 @@ class IDPcontrollerServiceProvider extends ServiceProvider
         // $this->mergeConfigFrom(__DIR__.'/../config/idpcontroller.php', 'idpcontroller');
 
         // Register the main class to use with the facade
-        $this->app->singleton('idpcontroller', function () {
-            return new IDPcontroller;
-        });
+        // $this->app->singleton('idpcontroller', function () {
+        //     return new IDPcontroller;
+        // });
     }
 }
