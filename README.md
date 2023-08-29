@@ -6,6 +6,14 @@
 
 An experimental package for Laravel 8 to use some features of IDP Access Controller manufactured by IDP Electronic ID Products Ltd (Israel). It's not intended for wide usage.
 
+At the moment this package does the following things:
+
+ - receives data from remote IDP Access Controller;
+ - extracts QR-code from received data;
+ - searches for this QR-code in users table in the field qrcode;
+ - if QR-code is found, sends command to the appropriate controller to open an appropriate relay for 5 seconds.
+
+
 ## Installation
 
 You can install the package via composer:
@@ -16,16 +24,11 @@ composer require igorkalm/idpcontroller
 
 ## Usage
 
-Add in config/app.php to "providers" section:
-```php
-Igorkalm\IDPcontroller\IDPcontrollerServiceProvider::class
-```
-
-Create new tables:
+Create new tables for access controllers data and controllers' events:
 ```php
 php artisan migrate
 ```
-If the feild named "qrcode" already exists in the users table, there will be an exception thrown. Just ignore it:
+If the feild named "qrcode" already exists in the users table, there will be an exception thrown like the one below. Just ignore it:
 
 ```php
 **Illuminate\Database\QueryException**
