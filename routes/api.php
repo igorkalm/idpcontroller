@@ -12,5 +12,5 @@ Route::prefix('api')->group(function () {
     Route::get('/close-relay/{relay_number}/{acid}', [IDPcontroller::class, 'closeRelay'])->middleware('api');
     
     // Receives controller events' data
-    Route::post('/get-controller-event/{idp_event}', [IDPcontroller::class, 'getControllerEvent'])->middleware('api');
+    Route::post('/get-controller-event/{idp_event}', [IDPcontroller::class, 'getControllerEvent']);
 });
