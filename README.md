@@ -1,8 +1,7 @@
-# Very short description of the package
+# Laravel 8 package for IDP Access Controller
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/igorkalm/idpcontroller.svg?style=flat-square)](https://packagist.org/packages/igorkalm/idpcontroller)
 [![Total Downloads](https://img.shields.io/packagist/dt/igorkalm/idpcontroller.svg?style=flat-square)](https://packagist.org/packages/igorkalm/idpcontroller)
-![GitHub Actions](https://github.com/igorkalm/idpcontroller/actions/workflows/main.yml/badge.svg)
 
 An experimental package for Laravel 8 to use some features of IDP Access Controller manufactured by IDP Electronic ID Products Ltd (Israel). It's not intended for wide usage.
 
